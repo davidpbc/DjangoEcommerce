@@ -1,0 +1,24 @@
+from django.shortcuts import render
+from django.views.generic import ListView
+
+from products.models import Product
+
+
+class SearchProductView(ListView):
+    template_name = "search/view.html"
+
+    def get_context_data(self, *args, **kwargs):
+        context = super(SearchProductView, self).get_context_data(*args, **kwargs)
+        query = self.request.GET.get('q')
+        context['query'] = query
+        # Imagine you want to add some analytics
+        # SearchQuery.objects.create(query=query)
+        # We need to make sure query is secure before or save it as a string
+        return context
+
+    def get_queryset(self, *args, **kwargs):
+        request = self.request
+        query = request.GET.get('q')
+        if query:
+            return Product.objects.search(query)
+        return Product.objects.features()

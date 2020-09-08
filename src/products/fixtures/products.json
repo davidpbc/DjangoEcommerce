@@ -1,0 +1,72 @@
+[
+{
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+        "title": "T-Shirt",
+        "slug": "t-shirt",
+        "description": "This is an awesome shirt buy it!",
+        "price": "39.99",
+        "image": "products/2723588721/2723588721.jpeg",
+        "featured": false,
+        "active": true,
+        "timestamp": "2020-05-26T22:53:43.848Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 2,
+    "fields": {
+        "title": "Hat",
+        "slug": "hat",
+        "description": "An awesome hat!",
+        "price": "39.99",
+        "image": "products/945738573/945738573.jpg",
+        "featured": false,
+        "active": true,
+        "timestamp": "2020-05-26T22:53:43.848Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+        "title": "Sunglasses",
+        "slug": "sunglasses",
+        "description": "Look super Cool with this!",
+        "price": "39.99",
+        "image": "products/632112760/632112760.jpg",
+        "featured": true,
+        "active": true,
+        "timestamp": "2020-05-26T22:53:43.848Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 4,
+    "fields": {
+        "title": "T-Shirt",
+        "slug": "t-shirt-ww4t",
+        "description": "Another one",
+        "price": "39.99",
+        "image": "products/935902524/935902524.jpg",
+        "featured": false,
+        "active": true,
+        "timestamp": "2020-06-01T22:37:49.612Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 5,
+    "fields": {
+        "title": "Mario Cap",
+        "slug": "mario-cap",
+        "description": "Check this Super Mario awesome Cap.",
+        "price": "39.99",
+        "image": "products/2332805271/2332805271.jpg",
+        "featured": false,
+        "active": true,
+        "timestamp": "2020-06-01T22:38:29.038Z"
+    }
+}
+]
